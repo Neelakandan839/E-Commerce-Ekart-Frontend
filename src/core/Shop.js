@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Layout from './Layout';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
-import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import Card from './Card';
 import { getCategories, getFilteredProducts } from './apiCore';
@@ -20,7 +17,9 @@ const Shop = () => {
   });
 
   const [categories, setCategories] = useState([]);
+   //eslint-disable-next-line
   const [error, setError] = useState(false);
+   //eslint-disable-next-line
   const [limit, setLimit] = useState(6);
   const [skip, setSkip] = useState(0);
   const [size, setSize] = useState(0);
@@ -94,6 +93,7 @@ const Shop = () => {
   useEffect(() => {
     init();
     loadFilteredResults(skip, limit, myFilters.filters);
+   //eslint-disable-next-line
   }, []);
 
   const handleFilters = (filters, filterBy) => {

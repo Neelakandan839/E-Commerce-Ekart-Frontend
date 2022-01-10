@@ -14,6 +14,7 @@ const Home = () => {
 
   const loadProductsBySell = () => {
     getProducts('sold').then((data) => {
+       //eslint-disable-next-line
       if (data.error) {
         setError(data.error);
       } else {

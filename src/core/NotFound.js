@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Layout from './Layout';
 import Copyright from './Copyright';
 import WarningIcon from '@material-ui/icons/Warning';

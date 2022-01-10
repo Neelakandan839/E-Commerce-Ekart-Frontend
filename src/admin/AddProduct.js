@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '../core/Layout';
 import { isAuthenticated } from '../auth';
-import { Link } from 'react-router-dom';
 import { createProduct, getCategories } from './apiAdmin';
 
 const AddProduct = () => {
@@ -28,14 +27,10 @@ const AddProduct = () => {
     description,
     price,
     categories,
-    category,
-    shipping,
     quantity,
-    photo,
     loading,
     error,
     createdProduct,
-    redirectToProfile,
     formData,
   } = values;
 
@@ -56,6 +51,7 @@ const AddProduct = () => {
 
   useEffect(() => {
     init();
+     //eslint-disable-next-line
   }, []);
 
   const handleChange = (name) => (event) => {

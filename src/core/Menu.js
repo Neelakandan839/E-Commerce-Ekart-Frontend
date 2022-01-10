@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Link, withRouter, forceUpdate } from 'react-router-dom';
+import { Link, withRouter} from 'react-router-dom';
 import { signout, isAuthenticated } from '../auth';
 import { itemTotal } from './cartHelpers';
 
@@ -8,15 +8,12 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import InputBase from '@material-ui/core/InputBase';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import MenuIcon from '@material-ui/icons/Menu';
 import MoreIcon from '@material-ui/icons/MoreVert';
 
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import Button from '@material-ui/core/Button';
 import HomeIcon from '@material-ui/icons/Home';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import DashboardIcon from '@material-ui/icons/Dashboard';
@@ -103,7 +100,7 @@ const MaterialAppBar = ({ history }) => {
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
+ //eslint-disable-next-line
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
