@@ -87,7 +87,7 @@ export default function Signup() {
       className='alert alert-info'
       style={{ display: success ? '' : 'none' }}
     >
-      New account is created. Please <Link to='/signin'>Signin</Link>.
+      New account is created. Please <Link to='/signin'>Login</Link>.
     </div>
   );
 
@@ -166,7 +166,7 @@ export default function Signup() {
           <Grid container justify='flex-end'>
             <Grid item>
               <Link to='/signin' variant='body2'>
-                Already have an account? Sign in
+                Already have an account? Login
               </Link>
             </Grid>
           </Grid>
