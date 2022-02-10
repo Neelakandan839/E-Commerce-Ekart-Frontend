@@ -98,9 +98,9 @@ const Card = ({
 
   const showStock = (quantity) => {
     return quantity > 0 ? (
-      <span className='badge badge-primary badge-pill'>In Stock </span>
+      <span className='badge badge-primary badge-pill'>Out Of Stock </span>
     ) : (
-      <span className='badge badge-primary badge-pill'>Out of Stock </span>
+      <span className='badge badge-primary badge-pill'>In Stock </span>
     );
   };
 
@@ -164,10 +164,6 @@ const Card = ({
     //     <p className='black-9'>
     //       Category: {product.category && product.category.name}
     //     </p>
-    //     <p className='black-8'>
-    //       Added on {moment(product.createdAt).fromNow()}
-    //     </p>
-
     //     {showStock(product.quantity)}
     //     <br></br>
 
