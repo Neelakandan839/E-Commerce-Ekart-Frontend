@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import ShowImage from './ShowImage';
-import moment from 'moment';
 
 import Button from '@material-ui/core/Button';
 import CardM from '@material-ui/core/Card';
