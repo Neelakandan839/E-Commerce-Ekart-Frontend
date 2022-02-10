@@ -66,7 +66,7 @@ const Card = ({
     return (
       showViewProductButton && (
         <Link href={`/product/${product._id}`} className='mr-2'>
-          <Button variant='contained' color='primary'>
+          <Button style={{margin:'5px'}} variant='contained' color='primary'>
             View Product
           </Button>
         </Link>
@@ -88,7 +88,7 @@ const Card = ({
   const showAddToCartBtn = (showAddToCartButton) => {
     return (
       showAddToCartButton && (
-        <Button onClick={addToCart} variant='outlined' color='secondary'>
+        <Button style={{margin:'5px'}} onClick={addToCart} variant='outlined' color='secondary'>
           Add to cart
         </Button>
       )
