@@ -154,28 +154,7 @@ const Card = ({
   const classes = useStyles();
 
   return (
-    // <div className='card'>
-    //   <div className='card-header name'>{product.name}</div>
-    //   <div className='card-body'>
-    //     {shouldRedirect(redirect)}
-    //     <ShowImage item={product} url='product' />
-    //     <p className='lead mt-2'>{product.description.substring(0, 100)}</p>
-    //     <p className='black-10'>${product.price}</p>
-    //     <p className='black-9'>
-    //       Category: {product.category && product.category.name}
-    //     </p>
-    //     {showStock(product.quantity)}
-    //     <br></br>
-
-    //     {showViewButton(showViewProductButton)}
-
-    //     {showAddToCartBtn(showAddToCartButton)}
-
-    //     {showRemoveButton(showRemoveProductButton)}
-
-    //     {showCartUpdateOptions(cartUpdate)}
-    //   </div>
-    // </div>
+   
 
     <Container className={classes.cardGrid} maxWidth='md'>
       <CssBaseline />
@@ -193,9 +172,7 @@ const Card = ({
               <p className='black-9'>
                 Category: {product.category && product.category.name}{' '}
               </p>{' '}
-              <p className='black-8'>
-                Added on {moment(product.createdAt).fromNow()}{' '}
-              </p>
+              
               {showStock(product.quantity)}
               <br></br>
               <span>
