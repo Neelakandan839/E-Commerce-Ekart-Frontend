@@ -1,1 +1,1 @@
-export const API ='https://ecommerce-ak.herokuapp.com/api';
+export const API ='https://e-commerce-ekart-backend.vercel.app/api';
